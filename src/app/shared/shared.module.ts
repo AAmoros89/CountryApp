@@ -5,7 +5,8 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-import { SerchBoxComponent } from './components/serch-box/serch-box.component';
+import { SerchBoxComponent } from './components/search-box/search-box.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 
 @NgModule({
@@ -14,18 +15,20 @@ import { SerchBoxComponent } from './components/serch-box/serch-box.component';
     AboutPageComponent,
     SidebarComponent,
     ContactPageComponent,
-    SerchBoxComponent
+    SerchBoxComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports:[
-    HomePageComponent,
     AboutPageComponent,
-    SidebarComponent,
     ContactPageComponent,
-    SerchBoxComponent
+    HomePageComponent,
+    LoadingSpinnerComponent,
+    SerchBoxComponent,
+    SidebarComponent,
   ]
 })
 export class SharedModule { }

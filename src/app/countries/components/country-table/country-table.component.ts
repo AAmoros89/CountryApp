@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Country } from '../../intefaces/country';
+import { Country } from '../../intefaces/country.interface';
 
 @Component({
   selector: 'countries-table',
